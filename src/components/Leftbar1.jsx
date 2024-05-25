@@ -21,12 +21,7 @@ const Leftbar1 = () => {
     };
     getData();
   }, [o_id]);
-function getName(){
-    const name = data?.filter(data=>data.id === o_id)
-    console.log(name,"NAME")
-    return name;
-}
-getName();
+
   function handleReportClick(key) {
     setReportId(key);
     navigate(`/organization/${o_id}/reports/${key}`);
