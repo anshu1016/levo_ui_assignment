@@ -32,7 +32,7 @@ const navigate = useNavigate();
   const { endpoints = [], ...otherData } = data;
 
   const successEndpoints = endpoints.filter(endpoint => endpoint.status === "SUCCESS");
-  const errorEndpoints = endpoints.filter(endpoint => endpoint.status === "ERROR" || endpoint.status === "FAILURE");
+  const errorEndpoints = endpoints.filter(endpoint =>  endpoint.status === "FAILURE");
 
   return (
     <div className="bg-white w-3/4 ml-auto min-h-screen">
